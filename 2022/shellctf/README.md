@@ -22,11 +22,6 @@ Dễ thấy chương trình sử dụng 5 hàm:
 - boilWater(): gán chuỗi nhập vào từ người dùng vào biến **pwd**
 ![](/2022/shellctf/images/imb_boilWater.PNG)
 
-`__int64 boilWater()` \
-{ \
-    `printf("Enter the flag: ");` \
-    `return __isoc99_scanf("%s", pwd);` \
-} 
 
 Sau đó chương trình sẽ kiểm tra chuỗi nhập vào có đúng 32 ký tự hay không.
 - addSugar(), addTea(), addMilk(): dùng để "xáo trộn xào nấu" chuỗi **pwd**
