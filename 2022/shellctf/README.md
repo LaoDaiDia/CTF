@@ -7,5 +7,4 @@
 
 Ở challenge này, đầu tiên ta sẽ sử dụng trình xem mã giả *(pseudocode)* của IDA để có cái nhìn tổng quan sơ bộ về challenge.
 
-![Trình xem mã giả trong IDA](/2022/shellctf/images/img_ida_pseudocode.PNG)
-
+<img src="/2022/shellctf/images/img_ida_pseudocode.PNG" alt="Trình xem mã giả trong IDA" width="100" height="132">
