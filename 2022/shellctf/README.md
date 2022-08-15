@@ -5,3 +5,7 @@
 
 *Công cụ: Kali.Linux_x64.v2021.1, IDA Freeware 7.7*
 
+Ở challenge này, đầu tiên ta sẽ sử dụng trình xem mã giả *(pseudocode)* của IDA để có cái nhìn tổng quan sơ bộ về challenge.
+
+![Trình xem mã giả trong IDA](/2022/shellctf/images/img_ida_pseudocode.PNG)
+
