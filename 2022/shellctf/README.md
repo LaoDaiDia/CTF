@@ -20,7 +20,7 @@ Sử dụng trình xem mã giả *(Pseudocode)* trong IDA để xem và phân t�
 
 Dễ thấy chương trình sử dụng 5 hàm:
 - boilWater(): gán chuỗi nhập vào từ người dùng vào biến **pwd**
-![](/2022/shellctf/images/imb_boilWater.PNG)
+![](/2022/shellctf/images/img_boilWater.PNG)
 
 
 Sau đó chương trình sẽ kiểm tra chuỗi nhập vào có đúng 32 ký tự hay không.
