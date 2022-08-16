@@ -35,4 +35,11 @@ Từ đó suy ra, bài này cần tìm một chuỗi **pwd** nhập vào (cũng 
 
 **_Hướng giải quyết bài này là đi từ chuỗi kết quả có sẵn trở ngược lên_**
 
-1. Phân tích hàm addMilk()
+1. Phân tích hàm addMilk() 
+![](/2022/shellctf/images/img_addMilk.PNG) 
+
+Hàm này sử dụng 3 biến kiểu *char* là **dest, s** và **v14** để lưu chuỗi tạm và biến đếm **v3**. Hàm *strncat()* dùng để nối chuỗi. \
+- Hàm while ở dòng 40: kiểm tra và thực hiện gán từng ký tự từ đầu chuỗi **pwd** đến khi gặp ký tự **5** (có mã ascii là 53) thì dừng, gán chuỗi kết quả vào **dest** 
+- Hàm while ở dòng 42: tiếp tục kiểm tra và gán các ký tự tiếp theo của chuỗi **pwd** đến khi gặp ký tự **R** (có mã ascii là 82) thì dừng lại, gán chuỗi kết quả vào **s**
+- Hàm while ở dòng 44: gán các ký tự còn lại của chuỗi **pwd** vào **v14**
+- Code từ dòng 46 -> 50: nối **v14**, **dest**, **s** theo thứ tự và gán cho **pwd**.
