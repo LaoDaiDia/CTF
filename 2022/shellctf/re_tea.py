@@ -1,17 +1,17 @@
-def Milk():
-    possibilitites = list()
-    final = "R;crc75ihl`cNYe`]m%50gYhugow~34i"
+def re_addMilk():
+    key = list()
+    pwd_final = "R;crc75ihl`cNYe`]m%50gYhugow~34i"
     s = "50gYhugow~34i"
-    rest = "R;crc75ihl`cNYe`]m%"
-    for i in range(1, len(rest)):
-        v14 = rest[:i]
-        dest = rest[i:]
-        possibilitites.append(dest + s + v14)
-    return possibilitites
+    v14_dest = "R;crc75ihl`cNYe`]m%"
+    for i in range(1, len(v14_dest)):
+        v14 = v14_dest[:i]
+        dest = v14_dest[i:]
+        key.append(dest + s + v14)
+    return key
 
 
 def Tea(test):
-    possibilitites = list()
+    key = list()
     for pos in test:
         flag = ""
         for i in range(0x20):
@@ -19,13 +19,13 @@ def Tea(test):
                 flag += chr(ord(pos[i]) + 3 * (i // 2))
             else:
                 flag += chr(ord(pos[i]) - i // 6)
-        possibilitites.append(flag)
+        key.append(flag)
 
-    return possibilitites
+    return key
 
 
 def Sugar(test):
-    possibilitites = list()
+    key = list()
 
     for pos in test:
         flag = ""
@@ -40,12 +40,12 @@ def Sugar(test):
             else:
                 flag += odd[k]
                 k += 1
-        possibilitites.append(flag)
-    return possibilitites
+        key.append(flag)
+    return key
 
 
-possibilitites = Sugar(Tea(Milk()))
+key = Sugar(Tea(Milk()))
 
 print("input")
-for pos in possibilitites:
+for pos in key:
     print(f"{pos}")
