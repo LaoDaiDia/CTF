@@ -19,7 +19,7 @@ Sử dụng trình xem mã giả *(Pseudocode)* trong IDA để xem và phân t�
 ![](/2022/shellctf/images/img_ida_pseudocode.PNG)
 
 Dễ thấy chương trình sử dụng 5 hàm:
-- boilWater(): gán chuỗi nhập vào từ người dùng vào biến **pwd**
+- boilWater(): gán chuỗi nhập vào từ người dùng vào biến **pwd** \
 ![](/2022/shellctf/images/img_boilWater.PNG)
 
 
