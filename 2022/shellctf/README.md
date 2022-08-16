@@ -36,6 +36,7 @@ Từ đó suy ra, bài này cần tìm một chuỗi **pwd** nhập vào (cũng 
 **_Hướng giải quyết bài này là đi từ chuỗi kết quả có sẵn trở ngược lên_** 
 
 1. Phân tích hàm addMilk()
+
 ![](/2022/shellctf/images/img_addMilk.PNG) 
 
 Hàm này sử dụng 3 biến kiểu *char* là **dest, s** và **v14** để lưu chuỗi tạm và biến đếm **v3**. Hàm *strncat()* dùng để nối chuỗi. 
