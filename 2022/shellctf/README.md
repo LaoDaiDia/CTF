@@ -46,7 +46,23 @@ Hàm này sử dụng 3 biến kiểu *char* là **dest, s** và **v14** để l
 - Code từ dòng 46 -> 50: nối **v14**, **dest**, **s** theo thứ tự và gán cho **pwd**.
 ![](/2022/shellctf/images/img_pwd-addMilk.PNG)
 
-Từ đó, ra có chương trình decode hàm *addMilk()* như sau:
+Từ đó, ta có hàm decode hàm *addMilk()* như sau:
 ![](/2022/shellctf/images/img_re-addMilk-f.PNG)
 
 *Biến i trong hàm đóng vai trò là biến "chạy" do lúc này ta không biết điểm đầu và cuối của chuỗi **pwd** ban đầu truyền vào hàm addMilk()*
+
+2. Phân tích hàm addTea()
+
+![](/2022/shellctf/images/img_addTea.PNG)
+
+Hàm này chia chuỗi **pwd** làm 2 nửa để xử lý:
+- Nửa đầu sẽ biến đổi theo công thức ở dòng 26
+- Nửa sau sẽ biến đổi theo công thức ở dòng 34
+Ta có chương trình hàm decode hàm *addTea()* như sau:
+
+![](/2022/shellctf/images/img_re-addTea-f.PNG)
+
+3. Phân tích hàm addSugar()
+
+![](/2022/shellctf/images/img_addSugar.PNG)
+

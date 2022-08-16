@@ -10,30 +10,30 @@ def re_addMilk():
     return key
 
 
-def Tea(test):
+def re_addTea(test):
     key = list()
-    for pos in test:
+    for k in test:
         flag = ""
-        for i in range(0x20):
-            if i < 0x20 // 2:
-                flag += chr(ord(pos[i]) + 3 * (i // 2))
+        for i in range(32):
+            if i < 16:
+                flag += chr(ord(k[i]) + 3 * (i // 2))
             else:
-                flag += chr(ord(pos[i]) - i // 6)
+                flag += chr(ord(k[i]) - i // 6)
         key.append(flag)
 
     return key
 
 
-def Sugar(test):
+def re_addSugar(test):
     key = list()
 
-    for pos in test:
+    for k in test:
         flag = ""
-        odd = pos[:0x10]
-        even = pos[0x10:]
+        odd = k[:16]
+        even = k[16:]
         j = 0
         k = 0
-        for i in range(len(pos)):
+        for i in range(len(k)):
             if i % 2 == 0:
                 flag += even[j]
                 j += 1
@@ -44,8 +44,8 @@ def Sugar(test):
     return key
 
 
-key = Sugar(Tea(Milk()))
+key = re_addSugar(re_addTea(re_addMilk()))
 
 print("input")
-for pos in key:
-    print(f"{pos}")
+for k in key:
+    print(f"{k}")
