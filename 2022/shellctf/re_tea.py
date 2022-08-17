@@ -26,19 +26,18 @@ def re_addTea(test):
 
 def re_addSugar(test):
     key = list()
-
-    for k in test:
+    for c in test:
         flag = ""
-        odd = k[:16]
-        even = k[16:]
+        a = c[:16]
+        b = c[16:]
         j = 0
         k = 0
-        for i in range(len(k)):
+        for i in range(len(c)):
             if i % 2 == 0:
-                flag += even[j]
+                flag += b[j]
                 j += 1
             else:
-                flag += odd[k]
+                flag += a[k]
                 k += 1
         key.append(flag)
     return key
